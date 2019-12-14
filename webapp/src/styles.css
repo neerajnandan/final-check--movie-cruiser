@@ -1,0 +1,171 @@
+ /* FONT IMPORT */
+ @import url('https://fonts.googleapis.com/css?family=Raleway:600|Source+Sans+Pro:400,900&display=swap');
+/* FONT  */
+ body{
+ font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* NAV BAR */
+.brand-logo{
+    font-size: 35px;
+    color:white;
+}
+.navbar-brand{
+    color:white;
+}
+.nav-icon-size{
+    font-size: 25px;
+  }
+.material-icons {
+    vertical-align: middle;
+ }
+ .veralign{
+   vertical-align: middle;
+ }
+ .navbar{
+     background-color: #279418;
+     background-image: linear-gradient(to right,#279418,#279418,#279418);
+ }
+ .nav-link{
+     color:white;
+ }
+ .nav-item a:hover{
+     color:#10ac84;
+ }
+ .navbar-header a:hover{
+    color:white;
+ }
+
+
+
+/* BANNER AND SEARCHBAR */
+.banner-image{
+    background-image: url("https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.search-heading{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+@media only screen and (min-width: 600px) {
+    .search-heading{
+        font-size: 40px;
+        font-weight: bolder;
+    }
+  }
+
+
+
+
+
+/* MENU ITEM LIST */
+
+/* ! CARD CSS */
+
+.card-deck .card{
+    /* padding-bottom:10px; */
+    width: 16rem;
+}
+
+.card-footer{
+    background-color: #fff;
+    border:0px;
+}
+
+.signup{
+    max-width: 600px;
+}
+
+.login{
+    max-width: 400px;
+}
+
+.movie-poster{
+    object-fit: fill;
+    width: 16rem;
+    height: 20rem;
+}
+
+
+
+
+.container-fluid{
+    margin-top: 10px;
+    align-content: center;
+}
+
+
+.icon-size{
+font-size: 13px;
+vertical-align: middle;
+
+}
+#testname{
+    white-space: normal;
+}
+.card-subtitle{
+    padding:16px 0px 16px 0px;
+    font-size:12px;
+}
+.card-text{
+    font-size: 14px;
+}
+.veralign{
+    vertical-align: middle;
+  }
+ .add-to-cart .btn-success, .edit-cards .btn-success, .submit .btn-success{
+    background-color:black;
+  
+  }
+  #badge-teaser{
+      background-color:#f53b57;
+      color:#ffffff;
+  }
+#dateofLaunch{
+    font-size: 12px;
+    vertical-align: top;
+}
+#icon-teaser{
+    color:#ff3f34;
+    font-size:20px;
+}
+
+.font-boxOffice{
+    font-size: 18px;
+}
+
+
+
+
+/* FAVORITES */
+
+.delete-icon{
+    font-size: 2rem;
+}
+.delete-icon:hover{
+    cursor: pointer;
+}
+
+
+/*EDIT MENU ITEM  */
+.invalid-feedback, .valid-feedback{
+    display:block;
+}
+.font-size-small{
+    font-size: 12px;
+}
+
+
+
+
+
+
+

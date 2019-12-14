@@ -1,0 +1,57 @@
+[
+    {
+      "id": 1,
+      "title": "Avathar",
+      "price":46584566642,
+      "active": true,
+      "dateOfLaunch": "2017-03-15",
+      "category": "Drama",
+      "freeDelivery": true,
+      "imageUrl": "https://i.pinimg.com/originals/43/aa/ad/43aaada6d7ceed12c5b91a21d3e7a676.jpg",
+      
+    },
+    {
+      "id": 2,
+      "title": "Titanic",
+      "price": 54987243218964,
+      "active": true,
+      "dateOfLaunch": "2017-12-23",
+      "category": "Romance",
+      "freeDelivery": false,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/1/19/Titanic_%28Official_Film_Poster%29.png",
+     
+    },
+    {
+      "id": 3,
+      "title": "Fast and Furious",
+      "price": 5416544612,
+      "active": true,
+      "dateOfLaunch": "2019-08-21",
+      "category": "Action",
+      "freeDelivery": false,
+      "imageUrl": "https://images-na.ssl-images-amazon.com/images/I/91BKgM1kuiL._SL1500_.jpg",
+      
+    },
+    {
+      "id": 4,
+      "title": " Iron Man",
+      "price": 126516565,
+      "active": false,
+      "dateOfLaunch": "2017-07-02",
+      "category": "Action",
+      "freeDelivery": true,
+      "imageUrl": "https://upload.wikimedia.org/wikipedia/en/7/70/Ironmanposter.JPG",
+      
+    },
+    {
+      "id": 5,
+      "title": "BatMan",
+      "price": 123456789,
+      "active": true,
+      "dateOfLaunch": "2022-11-02",
+      "category": "Action",
+      "freeDelivery": true,
+      "imageUrl": "https://cdn1.thr.com/sites/default/files/imagecache/NFE_portrait/2011/08/120169546_a_p_0.jpg",
+      
+    }
+  ]

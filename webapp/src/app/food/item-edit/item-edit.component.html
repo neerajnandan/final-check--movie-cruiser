@@ -1,0 +1,81 @@
+              <div class="container">
+                <div class="pt-4">
+                  <h2 class=" mt-5">Edit Movie</h2>
+                </div>  
+                <form [formGroup]="editForm" (submit)="onSubmitEditForm()" class="needs-validation pb-5 mb-5" name="menuItemForm" method="post" action="D:\Projects\submissions\truyum-ui-template\WebContent\edit-menu-item-success.html" novalidate>
+                   <div class="form-group edit-menu mt-3 mt-md-0">
+                        <label for="field-itemname">Movie Name</label>
+                        <input type="text" name="title" formControlName="title" class="form-control" id="field-itemname" required>
+  
+                        <div class="invalid-feedback" *ngIf="editForm.get('title').touched && editForm.get('title').hasError('required')"> Title is required</div>
+                        <div class="invalid-feedback" *ngIf="editForm.get('title').dirty && editForm.get('title').hasError('maxlength')" id="title-error-2">Title cannot exceed 200 characters</div>
+                        <div class="valid-feedback" *ngIf="editForm.get('title').dirty && !editForm.get('title').errors" id="title-valid">Delicious!</div>
+              
+                   </div>
+                   <div class="form-group row">
+                      <div class="col-md-3 edit-menu  mt-0 mt-md-0">
+                          <label for="field-price">Box Office</label>
+                          <input type="text" name="price" formControlName="price" class="form-control" id="field-price" required>
+                    
+                          <div class="invalid-feedback" *ngIf="editForm.get('price').dirty && editForm.get('price').hasError('required')" id="price-error-1">Box Office Collection is required</div>
+                          <div class="invalid-feedback" *ngIf="editForm.get('price').dirty && editForm.get('price').hasError('pattern')" id="price-error-2">Box Office Collection can only contain numbers</div>
+                          <div class="valid-feedback" *ngIf="editForm.get('price').dirty && !editForm.get('price').errors">Well Margined!</div>
+                      
+                      </div>
+                      <div class="col-md-3 edit-menu  mt-3 mt-md-0">
+                              <label for="field-dateOfLaunch">Date of Launch</label>
+                              <input type="date" name="dateOfLaunch" formControlName="dateOfLaunch" class="form-control" id="field-dateOfLaunch" required>
+                            
+                              <div class="invalid-feedback" *ngIf="editForm.get('dateOfLaunch').dirty && editForm.get('dateOfLaunch').hasError('required')" id="dateOfLaunch-error-1"></div>
+                              <div class="valid-feedback" *ngIf="editForm.get('dateOfLaunch').dirty && !editForm.get('dateOfLaunch').errors">Set!</div>
+                                                
+                         </div>
+                        <div class="col-md-3 edit-menu  mt-3 mt-md-0">
+                           <label for="field-category">Genre</label>
+                                <select name="category" formControlName="category" class=" form-control" required>
+                                   <option hidden></option>
+                                   <option value="Action">Action</option>
+                                    <option value="Romance">Romance</option>
+                                    <option value="Drama">Drama</option>
+                                </select>
+                                
+                              <div class="invalid-feedback" *ngIf="editForm.get('category').touched && editForm.get('category').hasError('required')" id="category-error-1">Genre is required</div>
+                              <div class="valid-feedback" *ngIf="editForm.get('category').touched && !editForm.get('category').errors">Sup!</div>
+                              
+                        </div>
+                        <div class="col-md-3 mt-3 mt-md-0">
+                             <label class="d-block">Active</label>
+                            <div class="form-check-inline  edit-menu mt-md-2 row ml-0">
+                                <input type="radio" name="active" formControlName="active" [value]=true class="form-check-input" id="field-yes" required>Yes                        
+                                <label class="form-check-label ml-3" for="field-yes"></label>
+                            
+                                <input type="radio" name="active" formControlName="active" [value]=false class="form-check-input" id="field-no" required>No                     
+                                <label class="form-check-label" for="field-no"></label>
+                               
+                            </div>
+                            
+                            
+                        </div>  
+                                                     
+                    </div>
+      
+                    <div class="form-group row">
+                          <div class="col-md-3">
+                                  <div class="checkbox form-horizontal">
+                                      <input type="checkbox" name="freeDelivery" formControlName="freeDelivery" id="field-freeDelivery"><label for="field-freeDelivery" class="ml-2">Has Teaser</label>
+                                  </div>    
+                              </div> 
+                      </div>
+      
+      
+      
+      
+      
+      
+      
+                    <div class="form-group row submit">
+                        <input type="submit" name="submit" [disabled]="!editForm.valid" class="btn btn-success ml-3" value="Save">
+                    </div>
+                    
+                </form>
+            </div>
